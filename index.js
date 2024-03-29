@@ -11,7 +11,7 @@ const config = {
   auto_buy_nitro: true,
   ping_on_run: false,
   ping_val: '@everyone',
-  embed_name: 'Discord Injection',
+  embed_name: 'PrimeStealer Injection',
   embed_icon: 'https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg'.replace(/ /g, '%20'),
   embed_color: 8363488,
   injection_url: '',
